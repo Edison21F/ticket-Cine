@@ -5,21 +5,30 @@ const navigationItems = [
     label: "Inicio",
     items: [
       { label: "Regresar a EvenTix", icon: "pi pi-home", routerLink: ["https://ticket-production-749d.up.railway.app/admin"] },
-      { label: "EventTix-Cine", icon: "pi pi-plus", routerLink: ["/admin-cine"] },
+      { label: "EvenTix-Cine", icon: "pi pi-plus", routerLink: ["/admin-cine"] },
     ],
   },
   {
     label: "Gestión de Cine",
     items: [
       { label: "Películas", icon: "pi pi-video", routerLink: ["/admin/peliculas"] },
-      { label: "Roles y Permisos", icon: "pi pi-key", routerLink: ["/admin/roles"] },
       { label: "Personal", icon: "pi pi-users", routerLink: ["/admin/personal"] },
     ],
   },
   {
+    label: "Gestión de Personal",
+    items: [
+      { label: "Roles", icon: "pi pi-key", routerLink: ["/admin-cine/personal/roles"] },
+      { label: "personal", icon: "pi pi-key", routerLink: ["/admin-cine/personal"] },
+      { label: "asignacion", icon: "pi pi-key", routerLink: ["/admin-cine/personal/asignacion"] },
+      
+    ]
+  },
+  {
     label: "Tienda",
     items: [
-      { label: "Productos", icon: "pi pi-shopping-bag", routerLink: ["/admin-cine/tienda"] },
+      { label: "Productos", icon: "pi pi-shopping-bag", routerLink: ["/admin-cine/tienda"] }, 
+      { label: "Inventario", icon: "pi pi-shopping-cart", routerLink:["/admin-cine/tienda/inventario"] },
       
     ],
   },
