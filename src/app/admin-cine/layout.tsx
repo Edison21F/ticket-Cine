@@ -2,46 +2,40 @@ import { SideNav } from "./side-nav"
 import { TopBar } from "./top-bar"
 const navigationItems = [
   {
-    label: 'Inicio',
+    label: "Inicio",
     items: [
-      { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/admin'] }
-    ]
+      { label: "Regresar a EvenTix", icon: "pi pi-home", routerLink: ["https://ticket-production-749d.up.railway.app/admin"] },
+      { label: "EventTix-Cine", icon: "pi pi-plus", routerLink: ["/admin-cine"] },
+    ],
   },
   {
-    label: 'Gestión de Usuarios',
+    label: "Gestión de Cine",
     items: [
-      { label: 'Usuarios', icon: 'pi pi-fw pi-users', routerLink: ['/admin/usuarios'] },
-      { label: 'Roles y Permisos', icon: 'pi pi-fw pi-key', routerLink: ['/admin/roles'] }
-    ]
+      { label: "Películas", icon: "pi pi-video", routerLink: ["/admin/peliculas"] },
+      { label: "Roles y Permisos", icon: "pi pi-key", routerLink: ["/admin/roles"] },
+      { label: "Personal", icon: "pi pi-users", routerLink: ["/admin/personal"] },
+    ],
   },
   {
-    label: 'Eventos',
+    label: "Tienda",
     items: [
-      { label: 'Listado de Eventos', icon: 'pi pi-fw pi-list', routerLink: ['/admin/eventos'] },
-      { label: 'Conciertos', icon: 'pi pi-id-card', routerLink: ['/admin/eventos/concierto'] },
-      { label: 'Cine', icon: 'pi pi-discord', routerLink: ['/admin/eventos/cine'] },
-      { label: 'Transporte', icon: 'pi pi-car', routerLink: ['/admin/eventos/transporte'] },
-      { label: 'Otros', icon: 'pi pi-microsoft', routerLink: ['/admin/eventos/varios'] }
-    ]
+      { label: "Productos", icon: "pi pi-shopping-bag", routerLink: ["/admin-cine/tienda"] },
+      
+    ],
   },
   {
-    label: 'Tickets',
+    label: "Boletos",
     items: [
-      { label: 'Listado de Tickets', icon: 'pi pi-fw pi-ticket', routerLink: ['/admin/tickets'] },
-    ]
+      { label: "Venta de Boletos", icon: "pi pi-ticket", routerLink: ["/admin/boletos"] },
+      { label: "Historial de Compras", icon: "pi pi-history", routerLink: ["/admin/historial-boletos"] },
+    ],
   },
   {
-    label: 'Pagos y Transacciones',
+    label: "Sesión",
     items: [
-      { label: 'Gestión de Pagos', icon: 'pi pi-fw pi-wallet', routerLink: ['/admin/pagos'] }
-    ]
+      { label: "Cerrar sesión", icon: "pi pi-sign-out", routerLink: ["/auth"] },
+    ],
   },
-  {
-    label: 'Sesión',
-    items: [
-      { label: 'Cerrar sesión', icon: 'pi pi-fw pi-cog', routerLink: ['/auth'] }
-    ]
-  }
 ];
 
 export default function RootLayout({
@@ -50,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-      <body className="bg-gradient-to-br from-purple-900 via-[#1c1c25] to-blue-900  max-w mx-auto ">
+      <div className="bg-gradient-to-br from-purple-900 via-[#1c1c25] to-blue-900  max-w mx-auto ">
         <div  className="flex min-h-screen">
         
 
@@ -62,7 +56,7 @@ export default function RootLayout({
             <main className="flex-1 p-3">{children}</main>
           </div>
         </div>
-      </body>
+      </div>
   
   )
 }
