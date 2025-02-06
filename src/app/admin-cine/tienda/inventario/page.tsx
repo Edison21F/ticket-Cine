@@ -4,7 +4,6 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import {
   Table,
   TableHeader,
@@ -28,6 +27,7 @@ import {
 import { motion } from "framer-motion"
 import { Edit, Trash2 } from "lucide-react"
 
+// Definición de la interfaz para los elementos del inventario
 interface InventoryItem {
   id: string
   name: string
@@ -37,14 +37,14 @@ interface InventoryItem {
 }
 
 export default function InventoryManagement() {
-  const [inventory, setInventory] = useState<InventoryItem[]>([])
-  const [editItem, setEditItem] = useState<InventoryItem | null>(null)
-  const [itemToDelete, setItemToDelete] = useState<InventoryItem | null>(null)
-  const [lowStockItems, setLowStockItems] = useState<InventoryItem[]>([])
+  const [_inventory, setInventory] = useState<InventoryItem[]>([])
+  const [_editItem, setEditItem] = useState<InventoryItem | null>(null)
+  const [_itemToDelete, setItemToDelete] = useState<InventoryItem | null>(null)
+  const [_lowStockItems, setLowStockItems] = useState<InventoryItem[]>([])
 
   useEffect(() => {
     // Cargar el inventario inicial (puede ser reemplazado por una llamada a una API)
-    const initialInventory = [
+    const _initialInventory = [
       {
         id: "1",
         name: "Papas Fritas",
@@ -86,38 +86,43 @@ export default function InventoryManagement() {
         quantity: 6,
         lastUpdated: new Date(),
         categories: ["Bebidas"],
-
       }
       // Agrega más productos según sea necesario
     ]
-    setInventory(initialInventory)
+    setInventory(_initialInventory)
   }, [])
 
   useEffect(() => {
     // Actualizar la lista de productos con bajo stock
-    const lowStock = inventory.filter((item) => item.quantity < 5)
-    setLowStockItems(lowStock)
-  }, [inventory])
+    const _lowStock = _inventory.filter((item) => item.quantity < 5)
+    setLowStockItems(_lowStock)
+  }, [_inventory])
 
+  // Función para agregar un nuevo item al inventario
   const handleAddItem = (item: InventoryItem) => {
+    // Validar el nombre del producto para evitar inyecciones de script
+    const _sanitizedItemName = item.name.replace(/<[^>]*>/g, "");
     setInventory((prev) => [
       ...prev,
-      { ...item, id: Math.random().toString(), lastUpdated: new Date() },
+      { ...item, name: _sanitizedItemName, id: Math.random().toString(), lastUpdated: new Date() },
     ])
   }
 
+  // Función para editar un item existente
   const handleEditItem = (item: InventoryItem) => {
+    const _sanitizedItemName = item.name.replace(/<[^>]*>/g, "");
     setInventory((prev) =>
       prev.map((i) =>
-        i.id === item.id ? { ...item, lastUpdated: new Date() } : i,
+        i.id === item.id ? { ...item, name: _sanitizedItemName, lastUpdated: new Date() } : i,
       ),
     )
     setEditItem(null)
   }
 
+  // Función para eliminar un item
   const handleDeleteItem = () => {
-    if (itemToDelete) {
-      setInventory((prev) => prev.filter((i) => i.id !== itemToDelete.id))
+    if (_itemToDelete) {
+      setInventory((prev) => prev.filter((i) => i.id !== _itemToDelete.id))
       setItemToDelete(null)
     }
   }
@@ -137,7 +142,7 @@ export default function InventoryManagement() {
       </motion.div>
 
       {/* Alerta de productos con bajo stock */}
-      {lowStockItems.length > 0 && (
+      {_lowStockItems.length > 0 && (
         <motion.div
           className="p-4 bg-red-500 bg-opacity-80 text-white rounded-md shadow-md backdrop-blur-md"
           initial={{ opacity: 0 }}
@@ -148,7 +153,7 @@ export default function InventoryManagement() {
             ¡Atención! Los siguientes productos tienen bajo stock:
           </h2>
           <ul className="list-disc list-inside">
-            {lowStockItems.map((item) => (
+            {_lowStockItems.map((item) => (
               <li key={item.id}>
                 {item.name} - Quedan {item.quantity} unidades
               </li>
@@ -170,7 +175,7 @@ export default function InventoryManagement() {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {inventory.map((item) => (
+            {_inventory.map((item) => (
               <TableRow
                 key={item.id}
                 className={`${item.quantity < 5
@@ -211,24 +216,24 @@ export default function InventoryManagement() {
       </div>
 
       {/* Diálogo para editar un producto */}
-      {editItem && (
+      {_editItem && (
         <InventoryDialog
-          item={editItem}
+          item={_editItem}
           onSave={handleEditItem}
-          open={!!editItem}
+          open={!!_editItem}
           onOpenChange={() => setEditItem(null)}
         />
       )}
 
       {/* Confirmación para eliminar un producto */}
-      <AlertDialog open={!!itemToDelete} onOpenChange={() => setItemToDelete(null)}>
+      <AlertDialog open={!!_itemToDelete} onOpenChange={() => setItemToDelete(null)}>
         <AlertDialogContent className="bg-gray-800 bg-opacity-80 text-white border border-gray-700 rounded-lg shadow-lg backdrop-blur-md">
           <AlertDialogHeader>
             <AlertDialogTitle className="text-2xl font-bold">
               Eliminar Producto
             </AlertDialogTitle>
             <AlertDialogDescription>
-              ¿Estás seguro de que deseas eliminar "{itemToDelete?.name}"?
+              ¿Estás seguro de que deseas eliminar ?
               Esta acción no se puede deshacer.
             </AlertDialogDescription>
           </AlertDialogHeader>

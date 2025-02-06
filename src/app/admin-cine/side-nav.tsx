@@ -78,6 +78,7 @@ export function SideNav({ items }: { className?: string; items: NavGroup[] }) {
               return (
                 <div key={index}>
                   <div className="border-b border-[#2A2B3C] mb-2">
+                    
                     <button
                       onClick={() => toggleSection(sectionId)}
                       className="flex items-center justify-between w-full py-4 text-sm font-medium hover:text-[#E59D23] transition-colors"

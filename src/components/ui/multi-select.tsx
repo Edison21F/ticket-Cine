@@ -1,8 +1,6 @@
-// components/ui/multi-select.tsx
-
 "use client"
 
-import Select from "react-select"
+import Select, { StylesConfig, MultiValue } from "react-select"
 
 interface Option {
   value: string
@@ -24,43 +22,43 @@ export function MultiSelect({
   className,
   placeholder,
 }: MultiSelectProps) {
-  const handleChange = (selectedOptions: Option[] | null) => {
-    onChange(selectedOptions ? selectedOptions.map((option) => option.value) : [])
+  const handleChange = (selectedOptions: MultiValue<Option>) => {
+    onChange([...selectedOptions.map((option) => option.value)])
   }
 
-  const customStyles = {
-    control: (provided: any) => ({
+  const customStyles: StylesConfig<Option, true> = {
+    control: (provided) => ({
       ...provided,
       backgroundColor: "rgba(55, 65, 81, 0.5)", // bg-gray-700 bg-opacity-50
       borderColor: "#4B5563", // border-gray-600
       borderRadius: "9999px", // rounded-full
       color: "#FFFFFF", // text-white
     }),
-    menu: (provided: any) => ({
+    menu: (provided) => ({
       ...provided,
       backgroundColor: "rgba(31, 41, 55, 0.9)", // bg-gray-800 bg-opacity-90
     }),
-    multiValue: (provided: any) => ({
+    multiValue: (provided) => ({
       ...provided,
       backgroundColor: "#374151", // bg-gray-700
     }),
-    multiValueLabel: (provided: any) => ({
+    multiValueLabel: (provided) => ({
       ...provided,
       color: "#FFFFFF", // text-white
     }),
-    placeholder: (provided: any) => ({
+    placeholder: (provided) => ({
       ...provided,
       color: "#9CA3AF", // text-gray-400
     }),
-    input: (provided: any) => ({
+    input: (provided) => ({
       ...provided,
       color: "#FFFFFF", // text-white
     }),
-    singleValue: (provided: any) => ({
+    singleValue: (provided) => ({
       ...provided,
       color: "#FFFFFF", // text-white
     }),
-    option: (provided: any, state: any) => ({
+    option: (provided, state) => ({
       ...provided,
       backgroundColor: state.isFocused ? "#2563EB" : "rgba(31, 41, 55, 0.9)",
       color: "#FFFFFF",

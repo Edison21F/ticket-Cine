@@ -118,7 +118,7 @@ export default function RolesManagement() {
                     <AlertDialogHeader>
                         <AlertDialogTitleComponent className="text-2xl font-bold">Eliminar Rol</AlertDialogTitleComponent>
                         <AlertDialogDescription>
-                            ¿Estás seguro de que deseas eliminar el rol "{roleToDelete?.name}"? Esta acción no se puede deshacer.
+                            ¿Estás seguro de que deseas eliminar el rol? Esta acción no se puede deshacer.
                         </AlertDialogDescription>
                     </AlertDialogHeader>
                     <AlertDialogFooter className="mt-4">

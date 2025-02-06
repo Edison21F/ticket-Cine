@@ -11,8 +11,7 @@ const navigationItems = [
   {
     label: "Gestión de Cine",
     items: [
-      { label: "Películas", icon: "pi pi-video", routerLink: ["/admin/peliculas"] },
-      { label: "Personal", icon: "pi pi-users", routerLink: ["/admin/personal"] },
+      { label: "salas", icon: "pi pi-video", routerLink: ["/admin-cine/salas"] },
     ],
   },
   {

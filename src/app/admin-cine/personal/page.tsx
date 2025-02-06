@@ -139,7 +139,7 @@ export default function StaffManagement() {
           <AlertDialogHeader>
             <AlertDialogTitleComponent className="text-2xl font-bold">Eliminar Personal</AlertDialogTitleComponent>
             <AlertDialogDescription>
-              ¿Estás seguro de que deseas marcar como inactivo a "{staffToDelete?.name}"? Podrás activarlo nuevamente en cualquier momento.
+              ¿Estás seguro de que deseas marcar como inactivo a este personal? Podrás activarlo nuevamente en cualquier momento.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter className="mt-4">

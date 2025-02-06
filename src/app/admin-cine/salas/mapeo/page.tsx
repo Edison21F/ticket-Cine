@@ -144,7 +144,7 @@ export default function CinemaAdminPage() {
         {/* Pantalla */}
         <div className="relative mb-12">
           <div className="h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mb-4"></div>
-          <p className="text-gray-400 text-center">Pantalla</p>
+          <div className="text-gray-400 text-center">Pantalla</div>
         </div>
 
         {/* Grid de asientos */}

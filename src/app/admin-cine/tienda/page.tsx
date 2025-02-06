@@ -229,7 +229,7 @@ export default function StorePage() {
 
   return (
     <div className="">
-      <div className="p-6 space-y-8 max-w-7xl mx-auto">
+      <div className="p-6 space-y-8  mx-auto">
         <motion.div
           className="flex items-center justify-between"
           initial={{ opacity: 0, y: -20 }}
@@ -329,7 +329,7 @@ export default function StorePage() {
                         <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
                           {product.name}
                         </h3>
-                        <p className="mt-2 text-gray-300 line-clamp-2">{product.description}</p>
+                        <div className="mt-2 text-gray-300 line-clamp-2">{product.description}</div>
                         <div className="mt-4 flex items-center justify-between">
                           <div className="space-y-1">
                             <span className="text-2xl font-bold text-cyan-400">
