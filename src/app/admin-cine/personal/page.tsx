@@ -28,6 +28,14 @@ export default function StaffManagement() {
   const [staff, setStaff] = useState<StaffMember[]>([
     { id: "1", name: "Juan Pérez", email: "juan@example.com", phone: "555-1234", isActive: true },
     { id: "2", name: "María Gómez", email: "maria@example.com", phone: "555-5678", isActive: true },
+    { id: "3", name: "Carlos López", email: "carlos@example.com", phone: "555-8765", isActive: true },
+    { id: "4", name: "Ana Martínez", email: "ana@example.com", phone: "555-4321", isActive: true },
+    { id: "5", name: "Luis Torres", email: "luis@example.com", phone: "555-6789", isActive: true },
+    { id: "6", name: "Sofía Ramírez", email: "sofia@example.com", phone: "555-3456", isActive: true },
+    { id: "7", name: "Pedro Sánchez", email: "pedro@example.com", phone: "555-9876", isActive: true },
+    { id: "8", name: "Lucía Fernández", email: "lucia@example.com", phone: "555-2468", isActive: true },
+    { id: "9", name: "Diego Herrera", email: "diego@example.com", phone: "555-1357", isActive: true },
+    { id: "10", name: "Gabriela Castro", email: "gabriela@example.com", phone: "555-8642", isActive: true },
     // Agrega más personal según necesites
   ])
   const [openDialog, setOpenDialog] = useState(false)

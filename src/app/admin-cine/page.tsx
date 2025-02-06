@@ -19,7 +19,7 @@ export default function DashboardPage() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-gray-300">Administra cines, personal y la tienda de snacks desde un solo lugar.</p>
+          <div className="text-gray-300">Administra cines, personal y la tienda de snacks desde un solo lugar.</div>
         </CardContent>
       </Card>
 

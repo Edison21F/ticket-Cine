@@ -102,7 +102,88 @@ const MOCK_PRODUCTS: Product[] = [
     stock: 50,
     isPromotion: true,
     promotionPrice: 15.99,
+  },{
+    id: "8",
+    name: "Combo 1",
+    price: 10.99,
+    category: "combos",
+    description: "1 canguil mediano + 1 bebida 32oz + 1 hot dog",
+    imageUrl: "/img/tienda/combo1.jpg",
+    stock: 100
+  },{
+    id: "9",
+    name: "Combo 2",
+    price: 10.99,
+    category: "combos",
+    description: "1 canguil mediano + 1 bebida 32oz + 1 nacho",
+    imageUrl: "/img/tienda/combo2.jpg",
+    stock: 100
+  },{
+    id: "10",
+    name: "Combo 3",
+    price: 14.99,
+    category: "combos",
+    description: "1 canguil mediano + 2 bebidas 32oz + 2 snack",
+    imageUrl: "/img/tienda/combo3.jpg",
+    stock: 100
+  },{
+    id: "11",
+    name: "agua con gas",
+    price: 2.99,
+    category: "bebidas",
+    description: "Agua con gas 1.5L",
+    imageUrl: "/img/tienda/agua-con-gas.jpg",
+    stock: 100
+  },{
+    id: "12",
+    name: "agua sin gas",
+    price: 2.99,
+    category: "bebidas",
+    description: "Agua con gas 1.5L",
+    imageUrl: "/img/tienda/agua-sin-gas.jpg",
+    stock: 100
+  },{
+    id: "13",
+    name: "Hot Dog",
+    price: 4.99,
+    category: "individuales",
+    description: "Hot Dog con salchicha de pollo",
+    imageUrl: "/img/tienda/hot-dog.jpg",
+    stock:25
+  },{
+    id: "14",
+    name: "Salsa de queso",
+    price: 2.99,
+    category: "salsas",
+    description: "Salsa de queso para acompañar tus snacks",
+    imageUrl: "/img/tienda/salsa-queso.jpg",
+    stock: 24
+  },{
+    id: "15",
+    name: "Galak",
+    price: 3.99,
+    category: "dulces",
+    description: "Galak de vainilla",
+    imageUrl: "/img/tienda/galak.jpg",
+    stock: 100
+  },{
+    id: "16",
+    name: "kitkat",
+    price: 3.99,
+    category: "dulces",
+    description: "Kitkat de chocolate",
+    imageUrl: "/img/tienda/kitkat.jpg",
+    stock: 100
   },
+  {
+    id: "17",
+    name: "Vaso Marvel",
+    price: 4.99,
+    category: "promociones",
+    description: "Vaso Marvel",
+    imageUrl: "/img/tienda/marvel.jpg",
+    stock: 100
+  }
 ]
 
 export default function StorePage() {

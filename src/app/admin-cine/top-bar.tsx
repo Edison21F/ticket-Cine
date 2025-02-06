@@ -37,7 +37,7 @@ export function TopBar() {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="absolute text-center font-bold bg-gradient-to-r from-yellow-400 to-red-500 bg-clip-text text-transparent 
+              className="absolute text-center font-bold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent 
               text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
               max-w-full whitespace-nowrap overflow-hidden text-ellipsis px-2"
             >
