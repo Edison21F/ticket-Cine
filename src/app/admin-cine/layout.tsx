@@ -34,7 +34,6 @@ const navigationItems = [
     label: "Boletos",
     items: [
       { label: "Venta de Boletos", icon: "ticket", routerLink: ["/admin-cine/boletos"] },
-      { label: "Historial de Compras", icon: "ticket", routerLink: ["/admin/historial-boletos"] },
     ],
   },
   {
