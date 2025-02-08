@@ -11,7 +11,7 @@ import {
   CheckCircle2,
   X,
   Clock,
-  Info,
+  //Info,
   QrCode,
   Wallet,
   Building2 as BankIcon,
@@ -129,7 +129,7 @@ const compradores: { [key: string]: { nombre: string; email: string; fecha: stri
     'A2': { nombre: 'María López', email: 'maria@email.com', fecha: '2024-03-20 15:31', metodoPago: 'PayPal' },
     'B5': { nombre: 'Carlos Ruiz', email: 'carlos@email.com', fecha: '2024-03-20 16:00', metodoPago: 'Efectivo' },
   };
-  
+
 function VentasReservas() {
   const [activeTab, setActiveTab] = useState<'ventas' | 'asientos' | 'pagos'>('ventas');
   const [asientosSeleccionados, setAsientosSeleccionados] = useState<string[]>([]);
