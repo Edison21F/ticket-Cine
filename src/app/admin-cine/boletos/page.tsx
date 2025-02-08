@@ -124,12 +124,12 @@ const metodospagoMock: MetodoPago[] = [
 ];
 
 // Mock data for seat buyers
-const compradores = {
-  'A1': { nombre: 'Juan Pérez', email: 'juan@email.com', fecha: '2024-03-20 15:30', metodoPago: 'Tarjeta' },
-  'A2': { nombre: 'María López', email: 'maria@email.com', fecha: '2024-03-20 15:31', metodoPago: 'PayPal' },
-  'B5': { nombre: 'Carlos Ruiz', email: 'carlos@email.com', fecha: '2024-03-20 16:00', metodoPago: 'Efectivo' },
-};
-
+const compradores: { [key: string]: { nombre: string; email: string; fecha: string; metodoPago: string } } = {
+    'A1': { nombre: 'Juan Pérez', email: 'juan@email.com', fecha: '2024-03-20 15:30', metodoPago: 'Tarjeta' },
+    'A2': { nombre: 'María López', email: 'maria@email.com', fecha: '2024-03-20 15:31', metodoPago: 'PayPal' },
+    'B5': { nombre: 'Carlos Ruiz', email: 'carlos@email.com', fecha: '2024-03-20 16:00', metodoPago: 'Efectivo' },
+  };
+  
 function VentasReservas() {
   const [activeTab, setActiveTab] = useState<'ventas' | 'asientos' | 'pagos'>('ventas');
   const [asientosSeleccionados, setAsientosSeleccionados] = useState<string[]>([]);
