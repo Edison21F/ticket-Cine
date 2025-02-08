@@ -1,0 +1,16 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/admin-cine/peliculas/page": "app/admin-cine/peliculas/page.js",
+  "/admin-cine/peliculas/gestion/page": "app/admin-cine/peliculas/gestion/page.js",
+  "/admin-cine/page": "app/admin-cine/page.js",
+  "/admin-cine/personal/asignacion/page": "app/admin-cine/personal/asignacion/page.js",
+  "/admin-cine/personal/roles/page": "app/admin-cine/personal/roles/page.js",
+  "/admin-cine/tienda/inventario/page": "app/admin-cine/tienda/inventario/page.js",
+  "/admin-cine/personal/page": "app/admin-cine/personal/page.js",
+  "/admin-cine/salas/mapeo/page": "app/admin-cine/salas/mapeo/page.js",
+  "/admin-cine/tienda/page": "app/admin-cine/tienda/page.js",
+  "/admin-cine/salas/page": "app/admin-cine/salas/page.js",
+  "/auth/page": "app/auth/page.js"
+}

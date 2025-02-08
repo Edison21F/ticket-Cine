@@ -1,0 +1,161 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/app/_not-found/page-55f864598ba8494a.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/css/fdf366b16dcc457a.css",
+      "static/chunks/351-dca251c62eaf4e73.js",
+      "static/chunks/app/layout-01696abd68d22291.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/app/page-262ce77966c1def5.js"
+    ],
+    "/admin-cine/layout": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/124-dd27fa4e01ec61dc.js",
+      "static/chunks/664-91c4df871a320cba.js",
+      "static/chunks/app/admin-cine/layout-50be2122e80a721a.js"
+    ],
+    "/admin-cine/peliculas/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/app/admin-cine/peliculas/page-435034a4c68ff458.js"
+    ],
+    "/admin-cine/peliculas/gestion/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/app/admin-cine/peliculas/gestion/page-e415c90d6e227453.js"
+    ],
+    "/admin-cine/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/124-dd27fa4e01ec61dc.js",
+      "static/chunks/746-4c63917042d9ac2d.js",
+      "static/chunks/565-bdade45650e88ade.js",
+      "static/chunks/app/admin-cine/page-9f51ffd442c9a93c.js"
+    ],
+    "/admin-cine/personal/asignacion/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/124-dd27fa4e01ec61dc.js",
+      "static/chunks/746-4c63917042d9ac2d.js",
+      "static/chunks/669-d3da76fc92192671.js",
+      "static/chunks/687-6e3d9f3d6bb0c22c.js",
+      "static/chunks/274-d14db944356df458.js",
+      "static/chunks/app/admin-cine/personal/asignacion/page-b0d6d775e73d36dd.js"
+    ],
+    "/admin-cine/personal/roles/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/124-dd27fa4e01ec61dc.js",
+      "static/chunks/746-4c63917042d9ac2d.js",
+      "static/chunks/669-d3da76fc92192671.js",
+      "static/chunks/app/admin-cine/personal/roles/page-f908ebf145e33a17.js"
+    ],
+    "/admin-cine/tienda/inventario/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/124-dd27fa4e01ec61dc.js",
+      "static/chunks/746-4c63917042d9ac2d.js",
+      "static/chunks/669-d3da76fc92192671.js",
+      "static/chunks/687-6e3d9f3d6bb0c22c.js",
+      "static/chunks/547-07a9a31aa1c0b73b.js",
+      "static/chunks/368-0af2b6560a14bf81.js",
+      "static/chunks/app/admin-cine/tienda/inventario/page-a202c86e05367c77.js"
+    ],
+    "/admin-cine/personal/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/124-dd27fa4e01ec61dc.js",
+      "static/chunks/746-4c63917042d9ac2d.js",
+      "static/chunks/669-d3da76fc92192671.js",
+      "static/chunks/app/admin-cine/personal/page-0db7d6aed4c4029d.js"
+    ],
+    "/admin-cine/salas/mapeo/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/app/admin-cine/salas/mapeo/page-7ab9c85ea0d9ebf2.js"
+    ],
+    "/admin-cine/tienda/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/124-dd27fa4e01ec61dc.js",
+      "static/chunks/746-4c63917042d9ac2d.js",
+      "static/chunks/669-d3da76fc92192671.js",
+      "static/chunks/687-6e3d9f3d6bb0c22c.js",
+      "static/chunks/274-d14db944356df458.js",
+      "static/chunks/565-bdade45650e88ade.js",
+      "static/chunks/657-ba5290f75c6d5e52.js",
+      "static/chunks/app/admin-cine/tienda/page-9af548851bea136b.js"
+    ],
+    "/admin-cine/salas/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/124-dd27fa4e01ec61dc.js",
+      "static/chunks/746-4c63917042d9ac2d.js",
+      "static/chunks/669-d3da76fc92192671.js",
+      "static/chunks/687-6e3d9f3d6bb0c22c.js",
+      "static/chunks/274-d14db944356df458.js",
+      "static/chunks/547-07a9a31aa1c0b73b.js",
+      "static/chunks/664-91c4df871a320cba.js",
+      "static/chunks/606-fb37841fed44d5bc.js",
+      "static/chunks/app/admin-cine/salas/page-bf566370b025e416.js"
+    ],
+    "/auth/layout": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/css/d498c84e4ab246b3.css",
+      "static/chunks/app/auth/layout-ebff1a429bb84d35.js"
+    ],
+    "/auth/page": [
+      "static/chunks/webpack-b86bd51c44405931.js",
+      "static/chunks/4bd1b696-226306243a82ccd8.js",
+      "static/chunks/517-a369dab5dc2f926b.js",
+      "static/chunks/main-app-dbace9aa91139ba9.js",
+      "static/chunks/124-dd27fa4e01ec61dc.js",
+      "static/chunks/746-4c63917042d9ac2d.js",
+      "static/chunks/669-d3da76fc92192671.js",
+      "static/chunks/565-bdade45650e88ade.js",
+      "static/chunks/657-ba5290f75c6d5e52.js",
+      "static/chunks/app/auth/page-713100bfddefcdf3.js"
+    ]
+  }
+}
