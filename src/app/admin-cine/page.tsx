@@ -50,28 +50,38 @@ export default function DashboardPage() {
 
       {/* Management Sections */}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {[
-          { title: "Administrar Cines", route: "/admin/peliculas", image: "/img/peliculas.png" },
-          { title: "Gestionar Empleados", route: "/admin/empleados", image: "/img/personal.png" },
-          { title: "Tienda de Snacks", route: "/admin/snacks", image: "/img/snacks.png" },
-        ].map((section, i) => (
-          <motion.div key={section.title} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: i * 0.2 }} whileHover={{ scale: 1.05 }}>
-            <Card className="border-cyan-500/20 bg-black/40 backdrop-blur-xl overflow-hidden">
-              <div className="relative w-full h-40">
-                <Image src={section.image} alt={section.title} fill className="object-cover" />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-gray-200 text-lg">{section.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Button onClick={() => router.push(section.route)} className="w-full bg-cyan-500 hover:bg-cyan-600 transition-all duration-300">
-                  Ir a {section.title}
-                </Button>
-              </CardContent>
-            </Card>
-          </motion.div>
-        ))}
-      </div>
+  {[
+    { title: "Administrar Cines", route: "/admin/peliculas", image: "/img/peliculas.png" },
+    { title: "Gestionar Empleados", route: "/admin/empleados", image: "/img/personal.png" },
+    { title: "Tienda de Snacks", route: "/admin/snacks", image: "/img/snacks.png" },
+  ].map((section, i) => (
+    <motion.div 
+      key={section.title} 
+      initial={{ opacity: 0, scale: 0.95 }} 
+      animate={{ opacity: 1, scale: 1 }} 
+      transition={{ delay: i * 0.2 }} 
+      whileHover={{ scale: 1.05 }}
+    >
+      <Card className="border-cyan-500/20 bg-black/40 backdrop-blur-xl overflow-hidden">
+        <div className="relative w-full h-40">
+          <Image src={section.image} alt={section.title} fill className="object-cover" />
+        </div>
+        <CardHeader>
+          <CardTitle className="text-gray-200 text-lg">{section.title}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <Button 
+            onClick={() => router.push(section.route)} 
+            className="w-full bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 hover:scale-105 text-white"
+          >
+            Ir a {section.title}
+          </Button>
+        </CardContent>
+      </Card>
+    </motion.div>
+  ))}
+</div>
+
     </div>
   );
 }

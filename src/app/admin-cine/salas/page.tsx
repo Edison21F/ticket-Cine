@@ -283,9 +283,11 @@ export default function TheatersPage() {
       >
         <h1 className="text-3xl font-bold text-cyan-400">Gestión de Salas</h1>
         <div className="space-x-2">
-          <Button onClick={() => setShowAddTheaterDialog(true)} className="bg-cyan-500 hover:bg-cyan-600">
-            Agregar Sala
-          </Button>
+        <Button 
+          onClick={() => setShowAddTheaterDialog(true)} 
+          className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg hover:opacity-90 transition-colors">
+          Agregar Sala
+        </Button>
         </div>
       </motion.div>
 

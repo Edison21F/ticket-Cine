@@ -61,9 +61,9 @@ export function ProductDialog({ product, onSave, open, onOpenChange }: ProductDi
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogTrigger asChild>
-        <Button className="bg-cyan-500 hover:bg-cyan-600 transition-all duration-300 hover:scale-105 text-white">
-          {product ? "Editar Producto" : "Agregar Producto"}
-        </Button>
+      <Button className="bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 hover:scale-105 text-white">
+        {product ? "Editar Producto" : "Agregar Producto"}
+      </Button>
       </DialogTrigger>
       <DialogContent className="max-h-[90vh] overflow-y-auto bg-gray-800/95 backdrop-blur-md border-gray-700">
         <DialogHeader>

@@ -53,11 +53,12 @@ export default function RolesManagement() {
         <div className="p-6 space-y-6">
             <div className="flex items-center justify-between">
                 <h1 className="text-3xl font-bold text-cyan-400">Gestión de Roles</h1>
-                <Button onClick={() => setOpenDialog(true)} className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full">
+                <Button 
+                   onClick={() => setOpenDialog(true)} 
+                   className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full px-4 py-2 hover:opacity-90 transition-colors">
                     Agregar Rol
-                </Button>
+                    </Button>
             </div>
-
             {/* Tabla de roles */}
             <div className="overflow-auto rounded-lg bg-gray-800 bg-opacity-50 backdrop-blur-md shadow-lg">
                 <Table className="min-w-full text-white">

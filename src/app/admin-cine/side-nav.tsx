@@ -73,7 +73,7 @@ export function SideNav({ items }: { className?: string; items: NavGroup[] }) {
         )}
       >
         <div className="space-y-4 py-4">
-          <div className="px-6 text-gray-400">
+          <div className="px-6 text-white">
             {items.map((group, index) => {
               const sectionId = `item-${index}`
               const isOpen = openSections.includes(sectionId)

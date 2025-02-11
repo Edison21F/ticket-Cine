@@ -55,13 +55,11 @@ export default function Page() {
       <div className="flex justify-between items-center flex-wrap">
         <h1 className="text-3xl sm:text-4xl font-bold text-[#22D3EE] mb-4">Películas destacadas</h1>
         <button
-          className="flex items-center bg-[#22D3EE] text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-opacity-80 transition-all text-left"
-          onClick={handleAdminClick}
-        >
-          <i className="fas fa-user-shield mr-2"></i> Administrador
+          className="flex items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 sm:px-6 py-2 rounded-full hover:opacity-90 transition-all text-left"
+          onClick={handleAdminClick}><i className="fas fa-user-shield mr-2"></i>
+          Administrador
         </button>
       </div>
-
       {/* Carrusel */}
       <div className="relative w-full max-w-full mx-auto overflow-hidden rounded-lg shadow-2xl border-4 border-gray-800">
         <div

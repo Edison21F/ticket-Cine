@@ -152,10 +152,10 @@ export default function GestionPeliculasPage() {
         </h1>
         <button
           onClick={() => setMostrarModal(true)}
-          className="bg-[#22D3EE] text-white px-4 sm:px-6 py-2 rounded hover:bg-opacity-80 transition"
-        >
+          className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 sm:px-6 py-2 rounded-full hover:opacity-90 transition">
           + Nueva Película
         </button>
+
       </div>
 
       {/* Tabla de películas */}
@@ -441,12 +441,11 @@ export default function GestionPeliculasPage() {
               </div>
 
               <div className="col-span-2 flex justify-center">
-                <button
-                  onClick={handleGuardarPelicula}
-                  className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition"
-                >
+              <button
+                onClick={handleGuardarPelicula}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:opacity-90 transition">
                   {editarPelicula ? "Guardar Cambios" : "Agregar Película"}
-                </button>
+              </button>
               </div>
             </div>
           </div>

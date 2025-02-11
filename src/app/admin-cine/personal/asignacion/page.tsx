@@ -88,10 +88,8 @@ export default function RoleAssignmentManagement() {
         </h1>
         <Button
           onClick={() => setSelectedAssignment({} as RoleAssignment)}
-          className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full shadow-lg transition-all"
-        >
-          Nueva Asignación
-        </Button>
+          className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg px-4 py-2 hover:opacity-90 transition-all">
+          Nueva Asignación</Button>
       </div>
 
       <div className="flex items-center space-x-4 mb-4">
